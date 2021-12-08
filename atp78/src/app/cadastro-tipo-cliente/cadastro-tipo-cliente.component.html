@@ -8,17 +8,17 @@
         <form (ngSubmit)="salvar()">
           <div class="mb-3">
             <label for="Id" class="form-label">Id</label>
-            <input type="number" class="form-control" name="id" id="id" [(ngModel)]="id" placeholder="id" />
+            <input type="number" class="form-control" name="id" id="id" [(ngModel)]="cliente.id" placeholder="id" />
         </div>
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" name="nome" id="nome" [(ngModel)]="nome" placeholder="nome" />
+                <input type="text" class="form-control" name="nome" id="nome" [(ngModel)]="cliente.nome" placeholder="nome" />
             </div>
             <div class="mb-3">
                 <label for="sobrenome" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" name="sobrenome" id="sobrenome" [(ngModel)]="sobrenome" placeholder="sobrenome" />
+                <input type="text" class="form-control" name="sobrenome" id="sobrenome" [(ngModel)]="cliente.sobrenome" placeholder="sobrenome" />
             </div>
-            <input class="btn btn-primary" type="submit" value="Salvar">
+            <input class="btn btn-primary" href="/atp78/src/app/cliente-lista/cliente-lista.component.html" type="submit" value="Salvar">
         </form>
     </main>
 </body>
